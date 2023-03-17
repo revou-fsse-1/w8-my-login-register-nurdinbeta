@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="data-name">Your Data is Unavailable!!</h1>
+      <h1>Add your data</h1>
+    </header>
+    <form>
+      <input type="text" id="inputName" placeholder="name" />
+      <input type="text" id="inputAge" placeholder="age" />
+      <input type="text" id="inputEmail" placeholder="email" />
+      <button class="add-data" type="button" onclick="addData()">
+        Add Data
+      </button>
+    </form>
+
+    <div class="container">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <script src="homepage.js"></script>
+  </body>
+</html>
