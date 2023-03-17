@@ -58,7 +58,6 @@ function signIn() {
   } else if (!numbers.test(userPassword)) {
     alert("Please add at least 1 number")
   } else {
-    alert("Welcome to Homepage");
     localStorage.setItem("email", userEmail);
     localStorage.setItem("password", userPassword);
     window.location.href = "homepage.html";
